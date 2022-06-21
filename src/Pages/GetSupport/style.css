@@ -69,10 +69,19 @@
     width: 100%;
     object-fit: contain;
 }
+.one{
+    display: none;
+}
 
 @media only screen and (max-width: 750px) {
-    .get-support-section{
+    .two{
+        display: none;
+    }
+    .one{
         display: block;
+    }
+    .get-support-section{
+       display: block;
         padding: 2rem;
         padding-top: 0;
     }

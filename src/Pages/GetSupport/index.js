@@ -62,6 +62,9 @@ const Index = () => {
     <div>
       <NavBar />
       <section className="topSection get-support-section">
+      <div className="support-group one">
+          <img src="/get-support.jpg" alt="group of ladies" />
+        </div>
         <div className="here-to-help">
           <h1> We're here to help.</h1>
           <p>
@@ -69,7 +72,7 @@ const Index = () => {
             health support near you.
           </p>
         </div>
-        <div className="support-group">
+        <div className="support-group two">
           <img src="/get-support.jpg" alt="group of ladies" />
         </div>
       </section>
