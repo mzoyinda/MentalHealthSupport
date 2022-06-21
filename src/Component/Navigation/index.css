@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* body {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+    text-transform: none;
+    color: #181e38;
+    color: #e01860;
+} */
+
+.logo {
+    width: 191.31px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    padding: 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.active {
+    background-color: #e01860;
+    color: #fff !important;
+}
+
+.largescreen {
+    display: none;
+}
+
+
+/* small screen */
+
+@media screen and (max-width:760px) {
+    .smallModal li a {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .smallscreen {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .img {
+        height: 80px;
+    }
+    .img img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .smallContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        row-gap: 15px;
+        margin-top: 15px;
+        position: relative;
+    }
+    .pinkContent {
+        width: 100%;
+        background-color: #e01860;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 10px 15px;
+    }
+    .smallIcon,
+    .pinkContent h2 {
+        color: #fff;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif
+    }
+    .pinkContent h2 {
+        text-transform: uppercase;
+    }
+    .smallIcon {
+        justify-self: end;
+        font-size: 27px;
+    }
+    .smallscreen ul {
+        position: absolute;
+        width: 80%;
+        box-shadow: 0 1px 1px #ccc;
+        padding: 15px 0;
+        display: grid;
+        row-gap: 15px;
+    }
+    .smallscreen ul li {
+        list-style: none !important;
+        width: 100%;
+    }
+    .activated {
+        background: #e01860 !important;
+        border-radius: 5px;
+        color: #fff !important;
+    }
+    .smallscreen ul li a {
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        color: #000;
+        padding: 10px 15px;
+        transition: all 0.3s linear;
+    }
+    .smallscreen ul li a:hover {
+        color: #e01860;
+    }
+}
+
+
+/* Navigation for large screen */
+
+@media screen and (min-width:778px) {
+    .navigation {
+        background: rgba(255, 255, 255, .9);
+        width: 100%;
+        box-shadow: 0 1px 1px #ccc;
+        /* position: fixed; */
+        padding: 20px 50px;
+    }
+    img {
+        height: 50px;
+        object-fit: cover;
+        padding: 0;
+        display: block;
+        cursor: pointer;
+    }
+    .navigation div {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 100px;
+        max-width: 1080px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .navigation div ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .navigation div ul li {
+        list-style: none;
+    }
+    .navigation div ul li a {
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        cursor: pointer;
+        width: 150px;
+        letter-spacing: 2px;
+        color: #000;
+        transition: all 0.3s linear;
+        width: 100px;
+        padding: 33px 15px;
+    }
+    .navigation div ul li a:hover {
+        color: #e01860;
+    }
+    .smallscreen {
+        display: none !important;
+    }
+    .modal {
+        position: absolute;
+        left: 65%;
+        top: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: start;
+        background: #fff;
+        box-shadow: 0 1px 1px #ccc;
+        width: 200px;
+        height: 150px;
+        display: none;
+    }
+    .modal li {
+        list-style: none;
+    }
+    .modal li a {
+        text-decoration: none;
+        width: 200px;
+        color: #000;
+        padding: 10px;
+        box-shadow: 0 1px 1px #ccc;
+        display: inline-block;
+        transition: all 0.3s linear;
+    }
+    .modal li a:hover {
+        color: #e01860 !important;
+    }
+    .show:hover {
+        color: #e01860 !important;
+    }
+    .show:hover .modal {
+        display: grid !important;
+    }
+}

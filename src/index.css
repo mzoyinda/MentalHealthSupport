@@ -1,0 +1,339 @@
+nav,
+.Navbar {
+    position: fixed;
+    top: 0;
+    border: none;
+    outline: none;
+    padding: 0 2rem;
+    height: 62px !important;
+    /* z-index: 1; */
+    justify-content: center;
+}
+
+.Navbar a {
+    color: #000000 !important;
+}
+
+.Navbar a:hover {
+    color: rgb(224, 24, 96) !important;
+}
+
+.home {
+    background-color: rgb(224, 24, 96) !important;
+}
+
+a.home {
+    color: white !important;
+}
+
+a.home:hover {
+    color: white!important;
+}
+.brand-logo{
+    display: flex;
+    
+}
+.brand-logo img {
+    width: 100%;
+    height: 55px !important;
+   
+    object-fit: contain;
+}
+
+.brand-logo p {
+position: absolute;
+margin: 0 !important;
+width: 350px;
+color: rgb(77, 18, 40);
+/* color: #e01860; */
+font-size: 1rem;
+font-weight: 600;
+padding: 0 !important;
+top: 0px;
+font-family: cursive;
+left: 4rem;
+}
+
+.dropdown-content {
+    min-width: fit-content !important;
+}
+
+.sidenav {
+    width: 200px;
+}
+
+.slider {
+    z-index: -1;
+    position: relative;
+    margin-top: 63px;
+    height: 550px !important;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.letters {
+    color: #e01860;
+}
+
+.pearlsLogo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.topSection {
+    margin-top: 15vmin !important;
+}
+
+.footer {
+    margin-top: 20vmin !important;
+}
+
+
+
+@keyframes element {
+    from {
+        transform: translate(-1000px, 0px)
+    }
+    to {
+        transform: translate(0px, 0px);
+    }
+}
+
+#element {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    animation-name: element;
+    animation-duration: 3s;
+}
+
+@keyframes two {
+    from {
+        transform: translate(0px, -600px)
+    }
+    to {
+        transform: translate(0px, 0px);
+    }
+}
+
+#two {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    animation-name: two;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+@keyframes three {
+    from {
+        transform: translate(0px, 400px);
+    }
+    to {
+        transform: translate(0px, -10px);
+    }
+}
+
+#three {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    animation-name: three;
+    animation-duration: 4s;
+    animation-delay: 12s;
+}
+
+@keyframes four {
+    from {
+        opacity: 0;
+        transform: scale3d(.75, .75, 1);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(2, 2, 1);
+    }
+}
+
+#four {
+    animation-name: four;
+    animation-duration: 4s;
+    animation-delay: 18s;
+    animation-timing-function: cubic-bezier(0, 1.07, .72, 1.42);
+    transform-origin: center top;
+}
+
+.indicator-item {
+    background-color: black !important;
+}
+
+.indicator-item.active {
+    background-color: #e01860 !important;
+}
+
+.line-wrapper {
+    text-align: center;
+}
+
+.line {
+    background-color: #e01860;
+    width: 55px;
+    height: 4px;
+    display: inline-block;
+    clear: both;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.pgraph {
+    width: 80%;
+    margin: 0px auto;
+    text-align: justify;
+    line-height: 2.0em;
+}
+
+.btn {
+    height: 35px;
+    width: 130px;
+    color: white;
+    background-color: #e01860 !important;
+}
+
+.btn:hover {
+    cursor: pointer;
+    animation-name: btn-anime;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    background-color: black !important;
+}
+
+@keyframes btn-anime {
+    0% {
+        background-color: #e01860;
+        border-bottom: 4px solid black;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.phone {
+    margin-left: 0.5em;
+}
+
+.whatsapplink {
+    text-decoration: none;
+    color: black !important;
+}
+
+.page-footer {
+    margin: 0px;
+}
+
+.footercontent {
+    width: 100% !important;
+    margin: 0px !important;
+}
+
+.footerdescription {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.footer-copyright {
+    text-align: center;
+    background-color: white !important;
+    color: black !important;
+}
+
+.footerlinks {
+    display: flex;
+}
+
+.flink {
+    margin: 0 15px;
+}
+
+.smlinks {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    a.brand-logo {
+        text-align: center;
+    }
+    .brand-logo img {
+        height: 58px !important;
+        padding: 4px 0px 0px;
+    }
+    .brand-logo p {
+        font-size: 1rem;
+        left: -3rem;
+        }
+}
+
+@media screen and (max-width:480px) {
+    .slider {
+        height: 350px !important;
+    }
+    .slides {
+        height: 350px !important;
+    }
+    .brand-logo p {
+        display: none !important;
+        }
+    .captitle {
+        font-size: 22px;
+    }
+    .letters {
+        font-size: 14px;
+    }
+    #three {
+        display: inline-block;
+        width: 60%;
+        color: #e01860;
+    }
+    #wrap {
+        display: inline-block;
+        width: fit-content;
+    }
+    .ngoImg {
+        display: none;
+    }
+    .ngoHeader {
+        margin-top: 20vmin;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:602px) {
+    .footerlinks {
+        text-align: center;
+        width: 50% !important;
+        margin: 0px auto !important;
+    }
+    .page-footer {
+        padding-top: 0px !important;
+    }
+    .footerdescription {
+        text-align: center;
+    }
+    .ngoImg {
+        width: 30vmin !important;
+        height: 45vmin !important;
+        margin: 5px 2px;
+        object-fit: cover;
+    }
+}

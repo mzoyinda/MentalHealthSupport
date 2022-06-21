@@ -1,0 +1,27 @@
+.aboutSection{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    margin: auto 2rem;
+}
+
+.motto{
+    flex: 0.5;
+    /* width: 100%; */
+}
+
+.about-img{
+    flex: 0.5;
+}
+
+.aboutImg{
+    width: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width:850px) {
+    .aboutSection{
+        display: block;
+    }
+}
