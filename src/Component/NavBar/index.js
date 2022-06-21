@@ -11,7 +11,7 @@ const Index = () => {
         alignLinks="right"
         brand={
         <a className="brand-logo" href="/">
-        <img className="logo" src="/logo.png" alt="profile" />
+        <img className="logo" src="/new-logo.png" alt="profile" />
         <p>Ladies Mental Support</p>
         </a>
         }
